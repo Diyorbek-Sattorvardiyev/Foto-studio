@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="narxlar.css">
+    <link rel="icon" href="logo_1.png">
+
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="gradient-background-overlay"></div>
+    <!-- Header Area Start -->
+    <header class="header-area">
+    <div class="container-fluid h-100">
+    <div class="row h-100 align-items-center">
+    <div class="col-12 h-100">
+    <div class="main-menu h-100">
+    <nav class="navbar h-100 navbar-expand-lg">
+    <!-- Logo Area  -->
+    <a class="navbar-brand" href="index.html"><img src="logo_1.png" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#studioMenu" aria-controls="studioMenu" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i> Menu</button>
+    <div class="collapse navbar-collapse" id="studioMenu">
+    <!-- Menu Area Start  -->
+    <ul class="navbar-nav ml-auto">
+    <li class="nav-item active">
+    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)
+    </span></a>
+    </li>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <a class="dropdown-item" href="index.html">Home</a>
+    <a class="dropdown-item" href="about-me.html">Biz haqimizda</a>
+    <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+    <a class="dropdown-item" href="contact.html">Aloqa</a>
+    <a class="dropdown-item" href="narxlar.html">Narxlar va Paketlar</a>
+    
+    </div>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="about-me.html">Biz haqimizda</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="portfolio.html">Portfolio</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="narxlar.html">Narxlar va Paketlar</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="contact.html">Aloqa</a>
+    </li>
+    </ul>
+    <!-- Search Form -->
+    <div class="header-search-form ml-auto">
+    <form action="#">
+    <input type="search" class="form-control" placeholder="Input your keyword then press enter..." id="search" name="search">
+    <input class="d-none" type="submit" value="submit">
+    </form>
+    </div>
+    <!-- Search btn -->
+    <div id="searchbtn">
+    <img src="img/core-img/search.png" alt="">
+        </div>
+    </div>
+    </nav>
+    </div>
+    </div>
+    </div>
+    </div>
+    </header>
+
+    
+    <div class="pricing-section">
+        <h1>Narxlar va paketlar</h1>
+        <div class="pricing-cards">
+            <!-- Package 1 -->
+            <div class="card">
+                <div class="card-header">Asosiy paket</div>
+                <div class="card-body">
+                    <ul>
+                        <li>1 soatlik fotosessiya</li>
+                        <li>10 ta tahrirlangan fotosuratlar</li>
+                        <li>High Resolution</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <p>$50</p>
+                    <button onclick="openModal()">Band qilish</button>
+                </div>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="card">
+                <div class="card-header">Standart paket</div>
+                <div class="card-body">
+                    <ul>
+                        <li>2 soatlik fotosessiya</li>
+                        <li>20 ta tahrirlangan fotosuratlar</li>
+                        <li>Yuqori aniqlik</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <p>$100</p>
+                    <button onclick="openModal()">Band qilish</button>
+                </div>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="card">
+                <div class="card-header">Premium paket</div>
+                <div class="card-body">
+                    <ul>
+                        <li>4 soatlik fotosessiya</li>
+                        <li>50 ta tahrirlangan fotosuratlar</li>
+                        <li>Yuqori aniqlik va albom</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <p>$200</p>
+                    <button onclick="openModal()">Band qilish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Area Start -->
+<footer class="footer-area">
+    <div class="container-fluid h-100">
+    <div class="row h-100">
+    <div class="col-12 h-100">
+    <div class="footer-content h-100 d-md-flex align-items-center justify-content-between">
+    <!-- Single Footer Content -->
+    <div class="single-footer-content">
+    <img src="img/core-img/map.png" alt="">
+    <a href="#">Urganch,Tatu</a>
+    </div>
+    <!-- Single Footer Content -->
+    <div class="single-footer-content">
+    <img src="img/core-img/smartphone.png" alt="">
+    <a href="#"></a>
+    </div>
+    <!-- Single Footer Content -->
+    <div class="single-footer-content">
+    <img src="img/core-img/envelope-2.png" alt="">
+    <a href="#">setmamatov@gmail.com</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="paymentModal">
+        <div class="modal-content">
+            <div class="modal-header">Enter Card Details</div>
+            <div class="modal-body">
+                <input type="text" placeholder="Card Number" maxlength="16">
+                <input type="text" placeholder="Card Expiry (MM/YY)" maxlength="5">
+                <input type="text" placeholder="CVV" maxlength="3">
+            </div>
+            <div class="modal-footer">
+                <button class="close-btn" onclick="closeModal()">Cancel</button>
+                <button class="pay-btn">Pay Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="narxlar.js"></script>
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <!-- Google tag (gtag.js) -->
+</body>
+</html>
